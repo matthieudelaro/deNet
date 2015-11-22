@@ -1,6 +1,22 @@
+# ignore CUDA files
 *.i
 *.ii
 *.gpu
 *.ptx
 *.cubin
 *.fatbin
+
+# ignore data sets (they can be downloaded using ./downloadAssets.sh)
+data
+
+# ignore files of CMake
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Makefile
+cmake_install.cmake
+install_manifest.txt
+
+# ignore build output
+build/*
+!build/CMakeLists.txt
